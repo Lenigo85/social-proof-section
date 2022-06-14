@@ -10,40 +10,42 @@
 body {
     font-size: 15px;
     font-family: 'League Spartan', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 .background {
-    /*
     background-image: url(./design/desktop-design.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    height: 800px;
     width: 1440px;
-    height: 100vh;
-    */
+    /*
     background-image: url(./images/bg-pattern-bottom-desktop.svg), url(./images/bg-pattern-top-desktop.svg);
     background-repeat: no-repeat, no-repeat;
     background-position: bottom right, top left;
-    height: 100vh;
-    width: 100vw;
-    
+    height: 800px;
+    width: 1440px;
+    */
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .container {
-    width: 90vw;
-    height: 75vh;
-    /*
+    width: 1113px;
+    height: 600px;
     border: 1px dashed black;
-    */
+    
 }
 
 .top-row {
     display: flex;
     flex-direction: row;
-    margin-bottom: 80px;
+    margin-bottom: 50px;
 }
 
 .top-row__left-column {
@@ -54,113 +56,113 @@ body {
 }
 
 .main__h1 {
-    font-size: 4.3em;
+    font-size: 3.7em;
     letter-spacing: -1.8px;
     color: var(--very-dark-magenta);
-    line-height: 55px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    padding-right: 150px;
+    line-height: 50px;
+    margin: 15px 150px 24px 0;
 }
 
 .main__p {
-    font-size: 1.4em;
-    padding-top: 17px;
-    padding-right: 120px;
-    line-height: 28px;
-    color: var(--very-dark-magenta);
+    font-size: 1.2em;
+    padding-top: 0px;
+    padding-right: 100px;
+    margin: 0;
+    line-height: 25px;
+    color: var(--dark-grayish-magenta);
 }
 
 .top-row__right-column {
-    width: 50%;
+    width: 540px;
+    height: 200px;
+    margin-top: 40px;
+    margin-left: 50px;
     display: flex;
     justify-content: right;
     align-items: center;
 }
 
 .ratings {
-    margin-top: 50px;
+    width: 540px;
+    margin-top: 10px;
     display: flex;
     flex-direction: column;
-    justify-content: right;
-    align-items: center;
 }
 
 .ratings__stars{
-    width: 523px;
+    height: 55px;
+    width: 445px;
     display: flex;
     align-items: center;
-    padding-left: 35px;
-    padding-top: 19px;
-    padding-bottom: 19px;
     border-radius: 5px;
-    margin-bottom: 18px;
+    padding-left: 30px;
+    margin: 8px 0px;
     background-color: var(--light-grayish-magenta);
-    /*
-    border: 1px dashed black;
-    */
 }
 
 .ratings__stars img {
-    width: 19px;
-    height: 19px;
-    margin-right: 6px;
+    width: 17px;
+    height: 17px;
+    margin-right: 4px;
 }
 
 .ratings__stars b {
     color: var(--very-dark-magenta);
-    padding-left: 35px;
-    font-size: 1.4em;
+    padding-left: 29px;
+    font-size: 1.15em;
 }
 
 #reviews {
-    position: relative;
-    right: 110px;
+    align-self: flex-start;
 }
 
 #report-guru {
-    position: relative;
-    right: 55px;
+    align-self: center;
+}
+
+#best-tech {
+    align-self: flex-end;
 }
 
 .cards {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-top: 120px;
+    margin-top: 100px;
+    height: 270px;
+    width: 1113px;
 }
 
 .card {
     border-radius: 10px;
-    width: 405px;
-    padding: 48px 36px;
-    background-color: var(--very-dark-magenta);
+    width: 351px;
+    height: 235px;
+    padding: 43px 30px;
     /*
-    border: 1px dashed black;
+    background-color: var(--very-dark-magenta);
     */
+    border: 1px dashed black;
 }
 
 #irene {
-    position: relative;
-    bottom: 20px;
+
 }
 
 #colton {
-    position: relative;
-    bottom: 40px;
+
 }
 
 .card__user{
     display: flex;
     flex-direction: row;
-    padding-bottom: 4px;
-    font-size: 1.4em;
+    padding-bottom: 0px;
+    font-size: 1.1em;
 }
 
 .card__user--img {
     border-radius: 50%;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     margin-right: 23px;
     margin-bottom: 22px;
 }
@@ -168,7 +170,6 @@ body {
 .card__user--id {
     display: flex;
     flex-direction: column;
-    letter-spacing: -1px;
 }
 
 .id__name {
@@ -177,15 +178,12 @@ body {
 
 .card__p {
     color: var(--light-grayish-magenta);
+    font-size: 1.1em;
+    line-height: 23px;
 }
 
 .id__status {
     color: var(--soft-pink);
-}
-
-.card__p {
-    font-size: 1.3em;
-    line-height: 26px;
 }
 
 
@@ -290,3 +288,4 @@ body {
         padding-right: 0;
     }
 }
+

@@ -17,19 +17,19 @@ body {
 }
 
 .background {
+    /*
     background-image: url(./design/desktop-design.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     height: 800px;
     width: 1440px;
-    /*
+    */
     background-image: url(./images/bg-pattern-bottom-desktop.svg), url(./images/bg-pattern-top-desktop.svg);
     background-repeat: no-repeat, no-repeat;
     background-position: bottom right, top left;
     height: 800px;
     width: 1440px;
-    */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -38,8 +38,6 @@ body {
 .container {
     width: 1113px;
     height: 600px;
-    border: 1px dashed black;
-    
 }
 
 .top-row {
@@ -138,18 +136,17 @@ body {
     width: 351px;
     height: 235px;
     padding: 43px 30px;
-    /*
     background-color: var(--very-dark-magenta);
-    */
-    border: 1px dashed black;
 }
 
 #irene {
-
+    position: relative;
+    bottom: 15px;
 }
 
 #colton {
-
+    position: relative;
+    bottom: 30px;
 }
 
 .card__user{

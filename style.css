@@ -36,11 +36,11 @@ body {
 }
 
 .container {
+    width: calc(100vw - 15%);
+    min-width: 1113px;
     /*
-    width: 1113px;
     height: 600px;
     */
-    width: calc(100vw - 15%);
 }
 
 .top-row {
